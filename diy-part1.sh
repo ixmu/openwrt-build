@@ -22,4 +22,4 @@ sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds
 
 #Add a theme
 rm -rf lede/package/lean/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-theme-argon.git  lede/package/lean/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-theme-argon.git  package/lean/luci-theme-argon
