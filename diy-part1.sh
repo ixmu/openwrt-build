@@ -19,3 +19,7 @@
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
+
+#Add a theme
+rm -rf lede/package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  lede/package/lean/luci-theme-argon
