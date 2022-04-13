@@ -1,0 +1,615 @@
+May  5 13:05:19 kernel: klogd started: BusyBox v1.25.1 (2022-04-12 20:30:56 CST)
+May  5 13:05:19 kernel: [    0.000000] Linux version 4.4.198 (paldier@paldier-SWRTdev) (gcc version 5.4.0 (LEDE GCC 5.4.0 r0-22e5567) ) #1 SMP Tue Apr 12 20:31:54 CST 2022
+May  5 13:05:19 kernel: [    0.000000] Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+May  5 13:05:19 kernel: [    0.000000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+May  5 13:05:19 kernel: [    0.000000] MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+May  5 13:05:19 kernel: [    0.000000] Kernel command line: console=ttyS0,115200 rootfstype=squashfs,jffs2
+May  5 13:05:19 kernel: [    0.132308] Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+May  5 13:05:19 kernel: [    0.132317] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+May  5 13:05:19 kernel: [    0.132327] MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+May  5 13:05:19 kernel: [    0.252132] Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+May  5 13:05:19 kernel: [    0.252138] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+May  5 13:05:19 kernel: [    0.252145] MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+May  5 13:05:19 kernel: [    0.369989] Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+May  5 13:05:19 kernel: [    0.369996] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+May  5 13:05:19 kernel: [    0.370002] MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+May  5 13:05:19 kernel: [    0.611432] mt7621-pci 1e140000.pcie: Failed to get gpio for PCIe1
+May  5 13:05:19 kernel: [    0.623642] mt7621-pci 1e140000.pcie: Failed to get gpio for PCIe2
+May  5 13:05:19 kernel: [    1.405027] mtk_soc_eth 1e100000.ethernet: generated random MAC address e2:17:5d:e8:93:f6
+May  5 13:05:19 kernel: [    1.433164] mtk_soc_eth 1e100000.ethernet: generated random MAC address 76:e5:0f:ca:9d:f8
+May  5 13:05:19 kernel: [    1.587849] mtkmips-pinmux pinctrl: spi is already enabled
+May  5 13:05:19 kernel: [    1.593390] mtk-nand 1e003000.nand: Error applying setting, reverse things back
+May  5 13:05:19 kernel: [    2.566736] Bad eraseblock 575 at 0x0000047e0000
+May  5 13:05:19 kernel: [    3.305377] 10 ofpart partitions found on MTD device mtk-nand
+May  5 13:05:19 kernel: [    3.311108] Creating 10 MTD partitions on "mtk-nand":
+May  5 13:05:19 kernel: [    3.316140] 0x000000000000-0x0000000e0000 : "Bootloader"
+May  5 13:05:19 kernel: [    3.323099] 0x000000100000-0x000000140000 : "SC_PART_MAP"
+May  5 13:05:19 kernel: [    3.329943] 0x000000140000-0x000000200000 : "nvram"
+May  5 13:05:19 kernel: [    3.336306] 0x000000200000-0x000002e00000 : "Kernel"
+May  5 13:05:19 kernel: [    3.343933] 2 asus-fw partitions found on MTD device Kernel
+May  5 13:05:19 kernel: [    3.349496] 0x000000200000-0x000000600000 : "linux"
+May  5 13:05:19 kernel: [    3.355896] 0x000000600000-0x000002e00000 : "rootfs"
+May  5 13:05:19 kernel: [    3.362691] mtd: device 5 (rootfs) set to be root filesystem
+May  5 13:05:19 kernel: [    3.368359] 0x000002e00000-0x000004400000 : "jffsconcat0"
+May  5 13:05:19 kernel: [    3.375417] 0x000004400000-0x000004600000 : "Factory2"
+May  5 13:05:19 kernel: [    3.382095] 0x000004600000-0x000004800000 : "Factory"
+May  5 13:05:19 kernel: [    3.388621] 0x000004800000-0x000004a00000 : "boarddata"
+May  5 13:05:19 kernel: [    3.395398] 0x000004a00000-0x000005420000 : "backup"
+May  5 13:05:19 kernel: [    3.401969] 0x000005420000-0x000007fe0000 : "jffsconcat1"
+May  5 13:05:19 kernel: [    3.495453] offset 0x12000 elapse 10ms
+May  5 13:05:19 kernel: [    3.549206] This architecture does not have kernel memory protection.
+May  5 13:05:19 kernel: [    5.899139] Concatenating MTD devices:
+May  5 13:05:19 kernel: [    5.903004] (0): "jffsconcat0"
+May  5 13:05:19 kernel: [    5.906071] (1): "jffsconcat1"
+May  5 13:05:19 kernel: [    5.909118] into device "jffs2"
+May  5 13:05:19 kernel: [    5.925374] Netgear R6700v2/R6800/R6900v2 LED driver initialized
+May  5 13:05:19 kernel: [    5.931742] Reset Semtech SX1503 GPIOs!
+May  5 13:05:19 kernel: [   14.351200] registered led device: netgear:lan4:orange
+May  5 13:05:19 kernel: [   14.431218] registered led device: netgear:lan4:white
+May  5 13:05:19 kernel: [   14.511221] registered led device: netgear:lan3:orange
+May  5 13:05:19 kernel: [   14.591216] registered led device: netgear:lan3:white
+May  5 13:05:19 kernel: [   14.671216] registered led device: netgear:lan2:orange
+May  5 13:05:19 kernel: [   14.751224] registered led device: netgear:lan2:white
+May  5 13:05:19 kernel: [   14.831222] registered led device: netgear:lan1:orange
+May  5 13:05:19 kernel: [   14.911214] registered led device: netgear:lan1:white
+May  5 13:05:19 kernel: [   14.991230] registered led device: netgear:power:orange
+May  5 13:05:19 kernel: [   15.071248] registered led device: netgear:power:white
+May  5 13:05:19 kernel: [   15.151219] registered led device: netgear:internet:orange
+May  5 13:05:19 kernel: [   15.231227] registered led device: netgear:internet:white
+May  5 13:05:19 kernel: [   15.311222] registered led device: netgear:2g:white
+May  5 13:05:19 kernel: [   15.391232] registered led device: netgear:5g:white
+May  5 13:05:19 kernel: [   15.471222] registered led device: netgear:guest:white
+May  5 13:05:19 kernel: [   15.551236] registered led device: netgear:usb:white
+May  5 13:05:19 kernel: [   23.297528] nand: nand_erase_nand: attempt to erase a bad block at page 0x00008fc0
+May  5 13:05:19 kernel: [   23.350253] Sync Factory's EEPROM to [Factory2] OK.
+May  5 13:05:19 kernel: [   26.492050] mt_wifi_7615E: module license 'Proprietary' taints kernel.
+May  5 13:05:19 kernel: [   26.498566] Disabling lock debugging due to kernel taint
+May  5 13:05:19 kernel: [   26.605488] register mt_drv
+May  5 13:05:19 kernel: [   26.625998] 
+May  5 13:05:19 kernel: [   26.625998] == pAd = c0d81000, size = 4183552, Status=0 ==
+May  5 13:05:19 kernel: [   26.633004] pAd->PciHif.CSRBaseAddress =0xc0c80000, csr_addr=0xc0c80000!
+May  5 13:05:19 kernel: [   26.639779] RTMPInitPCIeDevice():device_id=0x7615
+May  5 13:05:19 kernel: [   26.644512] mt_pci_chip_cfg(): HWVer=0x8a10, FWVer=0x8a10, pAd->ChipID=0x7615
+May  5 13:05:19 kernel: [   26.651634] mt_pci_chip_cfg(): HIF_SYS_REV=0x76150001
+May  5 13:05:19 kernel: [   26.656659] AP Driver version-5.1.0.0
+May  5 13:05:19 kernel: [   26.660301] RtmpChipOpsHook(223): Not support for HIF_MT yet! MACVersion=0x0
+May  5 13:05:19 kernel: [   26.667330] mt7615_init()-->
+May  5 13:05:19 kernel: [   26.670198] Use 1st iPAiLNA default bin.
+May  5 13:05:19 kernel: [   26.674120] Use 0st /etc_ro/wlan/MT7615E_EEPROM1.bin default bin.
+May  5 13:05:19 kernel: [   26.680200] <--mt7615_init()
+May  5 13:05:19 kernel: [   26.685775] <-- RTMPAllocTxRxRingMemory, Status=0
+May  5 13:05:19 kernel: [   26.715508] 
+May  5 13:05:19 kernel: [   26.715508] == pAd = c1281000, size = 4183552, Status=0 ==
+May  5 13:05:19 kernel: [   26.722599] pAd->PciHif.CSRBaseAddress =0xc1180000, csr_addr=0xc1180000!
+May  5 13:05:19 kernel: [   26.729387] RTMPInitPCIeDevice():device_id=0x7615
+May  5 13:05:19 kernel: [   26.734240] mt_pci_chip_cfg(): HWVer=0x8a10, FWVer=0x8a10, pAd->ChipID=0x7615
+May  5 13:05:19 kernel: [   26.741517] mt_pci_chip_cfg(): HIF_SYS_REV=0x76150001
+May  5 13:05:19 kernel: [   26.746595] AP Driver version-5.1.0.0
+May  5 13:05:19 kernel: [   26.750343] RtmpChipOpsHook(223): Not support for HIF_MT yet! MACVersion=0x0
+May  5 13:05:19 kernel: [   26.757488] mt7615_init()-->
+May  5 13:05:19 kernel: [   26.760450] Use 2nd ePAeLNA default bin.
+May  5 13:05:19 kernel: [   26.764467] Use 1st /etc_ro/wlan/MT7615E_EEPROM2.bin default bin.
+May  5 13:05:19 kernel: [   26.770581] <--mt7615_init()
+May  5 13:05:19 kernel: [   26.776276] <-- RTMPAllocTxRxRingMemory, Status=0
+May  5 13:05:19 kernel: [   28.022222] ubi0: attaching mtd12
+May  5 13:05:19 kernel: [   28.741114] ubi0: scanning is finished
+May  5 13:05:19 kernel: [   28.765062] ubi0: attached mtd12 (name "jffs2", size 65 MiB)
+May  5 13:05:19 kernel: [   28.765093] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+May  5 13:05:19 kernel: [   28.765110] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+May  5 13:05:19 kernel: [   28.765128] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+May  5 13:05:19 kernel: [   28.765145] ubi0: good PEBs: 526, bad PEBs: 0, corrupted PEBs: 0
+May  5 13:05:19 kernel: [   28.765164] ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+May  5 13:05:19 kernel: [   28.765185] ubi0: max/mean erase counter: 2/1, WL threshold: 4096, image sequence number: 1158952531
+May  5 13:05:19 kernel: [   28.765202] ubi0: available PEBs: 188, total reserved PEBs: 338, PEBs reserved for bad PEB handling: 11
+May  5 13:05:19 kernel: [   28.765663] ubi0: background thread "ubi_bgt0d" started, PID 614
+May  5 13:05:19 kernel: [   30.910240] random: init: uninitialized urandom read (6 bytes read, 91 bits of entropy available)
+May  5 13:05:19 kernel: [   30.910744] random: init: uninitialized urandom read (6 bytes read, 91 bits of entropy available)
+May  5 13:05:19 kernel: [   31.271277] xhci-mtk 1e1c0000.usb: ## USB3 port 0/0 addr(be1c0420) s1(000001c0) --> (000001c0)
+May  5 13:05:19 : module rt2860v2_ap not found in modules.dep
+May  5 13:05:21 kernel: [   33.183415] ra0: ===> main_virtual_if_open
+May  5 13:05:21 kernel: [   33.188574] load l1profile succeed!
+May  5 13:05:21 kernel: [   33.193121] driver_own()::Try to Clear FW Own...
+May  5 13:05:21 kernel: [   33.499540] driver_own()::Success to clear FW Own
+May  5 13:05:21 kernel: [   33.505949] APWdsInitialize():WdsEntry Number=4
+May  5 13:05:21 kernel: [   33.517061] RtmpOSFileOpen(): Error 2 opening /etc/Wireless/RT2860/RT2860_5G.dat
+May  5 13:05:21 kernel: [   33.524477] Open file "/etc/Wireless/RT2860/RT2860_5G.dat" failed!
+May  5 13:05:21 kernel: [   33.531427] E2pAccessMode=2
+May  5 13:05:21 kernel: [   33.534564] SSID[0]=Cisco_2G, EdcaIdx=0
+May  5 13:05:21 kernel: [   33.539017] BSS0 PhyMode=14
+May  5 13:05:21 kernel: [   33.541853] wmode_band_equal(): Band Equal!
+May  5 13:05:21 kernel: [   33.546145] auto_ch_select_set_cfg(): BandIdx0, AutoChannelAtBootup=1, AutoChannelAlg = 3
+May  5 13:05:21 kernel: [   33.555924] [TxPower] BAND0: 100 
+May  5 13:05:21 kernel: [   33.562373] FragThreshold[0]=2346
+May  5 13:05:21 kernel: [   33.568928] I/F(ra0) NoForwardingMBCast=0
+May  5 13:05:21 kernel: [   33.575810] read_etxbf: ETxBfEnCond = 0
+May  5 13:05:21 kernel: [   33.579628] read_etxbf: BSSID[0]
+May  5 13:05:21 kernel: [   33.582887] read_etxbf: MBSS[0] ETxBfEnCond = 0
+May  5 13:05:21 kernel: [   33.588576] [RTMPSetProfileParameters]Disable DFS/Zero wait=0/0
+May  5 13:05:21 kernel: [   33.629970] If/wds0 - PeerPhyOpMode=255
+May  5 13:05:21 kernel: [   33.634509] APWdsInitialize():WdsEntry Number=4
+May  5 13:05:21 kernel: [   33.639014] WDS-Enable mode=0
+May  5 13:05:21 kernel: [   33.642271] AndesSendCmdMsg: Could not send in band command due to diablefRTMP_ADAPTER_MCU_SEND_IN_BAND_CMD
+May  5 13:05:21 kernel: [   33.651991] AndesSendCmdMsg: Command type = ed, Extension command type = 48
+May  5 13:05:21 kernel: [   33.662363] HT: WDEV[0] Ext Channel = BELOW
+May  5 13:05:21 kernel: [   33.666796] HT: greenap_cap = 0
+May  5 13:05:21 kernel: [   33.691044] RT_CfgSetWscPinCode(): invalid Wsc PinCode (14725836)
+May  5 13:05:21 kernel: [   33.697112] RTMPSetProfileParameters - WscVendorPinCode: invalid pin code(14725836)
+May  5 13:05:21 kernel: [   33.725690] WtcSetMaxStaNum: BssidNum:1, MaxStaNum:125 (WdsNum:4, ApcliNum:1, MaxNumChipRept:16), MinMcastWcid:126
+May  5 13:05:21 kernel: [   33.736276] Top Init Done!
+May  5 13:05:21 kernel: [   33.738981] Use dev_alloc_skb
+May  5 13:05:21 kernel: [   33.743336] RX[0] DESC a0d54000 size = 16384
+May  5 13:05:21 kernel: [   33.748944] RX[1] DESC a0d1a000 size = 8192
+May  5 13:05:21 kernel: [   33.753855] cut_through_init(): ct sw token number = 4095
+May  5 13:05:21 kernel: [   33.759748] cut_through_token_list_init(): TokenList inited done!id_head/tail=0/4096
+May  5 13:05:21 kernel: [   33.767545] cut_through_token_list_init(): 8d434188,8d434188
+May  5 13:05:21 kernel: [   33.773699] cut_through_token_list_init(): TokenList inited done!id_head/tail=0/4096
+May  5 13:05:21 kernel: [   33.781481] cut_through_token_list_init(): 8d434198,8d434198
+May  5 13:05:21 kernel: [   33.787145] Hif Init Done!
+May  5 13:05:21 kernel: [   33.789843] ctl->txq = c1178d90
+May  5 13:05:21 kernel: [   33.793022] ctl->rxq = c1178d9c
+May  5 13:05:21 kernel: [   33.796152] ctl->ackq = c1178da8
+May  5 13:05:21 kernel: [   33.799363] ctl->kickq = c1178db4
+May  5 13:05:21 kernel: [   33.802712] ctl->tx_doneq = c1178dc0
+May  5 13:05:21 kernel: [   33.806275] ctl->rx_doneq = c1178dcc
+May  5 13:05:21 kernel: [   33.809905] Parsing patch header
+May  5 13:05:21 kernel: [   33.813167] 	Built date: 20180518100604a
+May  5 13:05:21 kernel: [   33.817134] 
+May  5 13:05:21 kernel: [   33.818615] 	Platform: ALPS
+May  5 13:05:21 kernel: [   33.821475] 	HW/SW version: 0x8a108a10
+May  5 13:05:21 kernel: [   33.825234] 	Patch version: 0x00000010
+May  5 13:05:21 kernel: [   33.828987] 	Target address: 0x80000, length: 11072
+May  5 13:05:21 kernel: [   33.834055] patch is not ready && get semaphore success
+May  5 13:05:21 kernel: [   33.839333] EventGenericEventHandler: CMD Success
+May  5 13:05:21 kernel: [   33.844212] MtCmdPatchFinishReq
+May  5 13:05:21 kernel: [   33.858600] EventGenericEventHandler: CMD Success
+May  5 13:05:21 kernel: [   33.863446] release patch semaphore
+May  5 13:05:21 kernel: [   33.866930] WfMcuHwInit: Before NICLoadFirmware, check ICapMode = 0
+May  5 13:05:21 kernel: [   33.873233] Parsing CPU 0 fw tailer
+May  5 13:05:21 kernel: [   33.876708] 	Chip ID: 0x04
+May  5 13:05:21 kernel: [   33.879413] 	Eco version: 0x00
+May  5 13:05:21 kernel: [   33.882522] 	Region number: 0x00
+May  5 13:05:21 kernel: [   33.885740] 	Format version: 0x00
+May  5 13:05:21 kernel: [   33.889043] 	Ram version: _reserved_
+May  5 13:05:22 kernel: [   33.892720] 	Built date: 20170622015450<4>[   33.903078] 	Feature set: 0x01
+May  5 13:05:22 kernel: [   33.906142] 	Target address: 0x84000, Download size: 409600
+May  5 13:05:22 kernel: [   33.911733] Parsing tailer region 1
+May  5 13:05:22 kernel: [   33.915213] 	Feature set: 0x01
+May  5 13:05:22 kernel: [   33.918264] 	Target address: 0x209c400, Download size: 53056
+May  5 13:05:22 kernel: [   33.924062] EventGenericEventHandler: CMD Success
+May  5 13:05:22 kernel: [   33.934255] EventGenericEventHandler: CMD Success
+May  5 13:05:22 kernel: [   33.939719] MtCmdFwStartReq: override = 0x1, address = 0x84000
+May  5 13:05:22 kernel: [   33.945714] EventGenericEventHandler: CMD Success
+May  5 13:05:22 kernel: [   33.950443] Parsing CPU 1 fw tailer
+May  5 13:05:22 kernel: [   33.953974] 	Chip ID: 0x04
+May  5 13:05:22 kernel: [   33.956686] 	Eco version: 0x00
+May  5 13:05:22 kernel: [   33.959730] 	Region number: 0x00
+May  5 13:05:22 kernel: [   33.963018] 	Format version: 0x00
+May  5 13:05:22 kernel: [   33.966323] 	Ram version: _reserved_
+May  5 13:05:22 kernel: [   33.969913] 	Built date: 20190415154149<4>[   33.980298] 	Feature set: 0x01
+May  5 13:05:22 kernel: [   33.983412] 	Target address: 0x90000000, Download size: 122608
+May  5 13:05:22 kernel: [   33.989291] EventGenericEventHandler: CMD Success
+May  5 13:05:22 kernel: [   33.995645] MtCmdFwStartReq: override = 0x4, address = 0x0
+May  5 13:05:22 kernel: [   34.066542] EventGenericEventHandler: CMD Success
+May  5 13:05:22 kernel: [   34.105482] MCU Init Done!
+May  5 13:05:22 kernel: [   34.108191] efuse_probe: efuse = 10000212
+May  5 13:05:22 kernel: [   34.112225] RtmpChipOpsEepromHook::e2p_type=2, inf_Type=5
+May  5 13:05:22 kernel: [   34.117612] RtmpEepromGetDefault::e2p_dafault=1
+May  5 13:05:22 kernel: [   34.122177] RtmpChipOpsEepromHook: E2P type(2), E2pAccessMode = 2, E2P default = 1
+May  5 13:05:22 kernel: [   34.129721] NVM is FLASH mode. dev_idx [0] FLASH OFFSET [0x0]
+May  5 13:05:22 kernel: [   34.137400] ^[[34mNICReadEEPROMParameters: EEPROM 0x52 b302^[[m
+May  5 13:05:22 kernel: [   34.143197] ^[[34mNICReadEEPROMParameters: EEPROM 0x52 b302^[[m
+May  5 13:05:29 kernel: [   41.626182] Country Region from e2p = 101
+May  5 13:05:29 kernel: [   41.630184] mt7615_antenna_default_reset(): TxPath = 4, RxPath = 4
+May  5 13:05:29 kernel: [   41.636388] RcRadioInit(): DbdcMode=0, ConcurrentBand=1
+May  5 13:05:29 kernel: [   41.641625] RcRadioInit(): pRadioCtrl=8fd52af4,Band=0,rfcap=3,channel=1,PhyMode=2 extCha=0xf
+May  5 13:05:29 kernel: [   41.650040] MtSingleSkuLoadParam: RF_LOCKDOWN Feature OFF !!!
+May  5 13:05:29 kernel: [   41.679406] MtBfBackOffLoadParam: RF_LOCKDOWN Feature OFF !!!
+May  5 13:05:29 kernel: [   41.685701] EEPROM Init Done!
+May  5 13:05:29 kernel: [   41.688666] mt_mac_init()-->
+May  5 13:05:29 kernel: [   41.691584] mt7615_init_mac_cr()-->
+May  5 13:05:29 kernel: [   41.695088] mt7615_init_mac_cr(): TMAC_TRCR0=0x82783c8c
+May  5 13:05:29 kernel: [   41.700302] <--mt_mac_init()
+May  5 13:05:29 kernel: [   41.703437] CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+May  5 13:05:29 kernel: [   41.710038] CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+May  5 13:05:29 kernel: [   41.716655] CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+May  5 13:05:29 kernel: [   41.723219] MAC Init Done!
+May  5 13:05:29 kernel: [   41.725926] MT7615BBPInit():BBP Initialization.....
+May  5 13:05:29 kernel: [   41.730786] 	Band 0: valid=1, isDBDC=0, Band=2, CBW=1, CentCh/PrimCh=1/1, prim_ch_idx=0, txStream=2
+May  5 13:05:29 kernel: [   41.739845] 	Band 1: valid=0, isDBDC=0, Band=0, CBW=0, CentCh/PrimCh=0/0, prim_ch_idx=0, txStream=0
+May  5 13:05:29 kernel: [   41.748865] MT7615BBPInit() todo
+May  5 13:05:29 kernel: [   41.752120] PHY Init Done!
+May  5 13:05:29 kernel: [   41.757396] MtCmdSetMacTxRx:(ret = 0)
+May  5 13:05:29 kernel: [   41.761511] ap_ftkd> Initialize FT KDP Module...
+May  5 13:05:29 kernel: [   41.766132] Main bssid = 00:00:00:00:00:00
+May  5 13:05:29 kernel: [   41.777701] MtCmdSetMacTxRx:(ret = 0)
+May  5 13:05:29 kernel: [   41.781582] MtCmdSetMacTxRx:(ret = 0)
+May  5 13:05:29 kernel: [   41.785251] <==== mt_wifi_init, Status=0
+May  5 13:05:29 kernel: [   41.789151] TxBfModuleEnCtrl:It's not DBDC mode
+May  5 13:05:29 kernel: [   41.793761] MtCmdEDCCACtrl: BandIdx: 0, EDCCACtrl: 1
+May  5 13:05:29 kernel: [   41.798853] The new WDS interface MAC = 00:00:00:00:00:00, MacTabMatchWCID = 0
+May  5 13:05:29 kernel: [   41.807543] The new WDS interface MAC = 00:00:00:00:00:00, MacTabMatchWCID = 0
+May  5 13:05:29 kernel: [   41.833269] The new WDS interface MAC = 00:00:00:00:00:00, MacTabMatchWCID = 0
+May  5 13:05:29 kernel: [   41.851208] The new WDS interface MAC = 00:00:00:00:00:00, MacTabMatchWCID = 0
+May  5 13:05:29 kernel: [   41.859930] Total allocated 4 WDS interfaces!
+May  5 13:05:29 kernel: [   41.865748] random: nonblocking pool is initialized
+May  5 13:05:30 kernel: [   41.912716] WtcSetMaxStaNum: BssidNum:1, MaxStaNum:125 (WdsNum:4, ApcliNum:1, MaxNumChipRept:16), MinMcastWcid:126
+May  5 13:05:30 kernel: [   42.035700] RedInit: set CR4/N9 RED Enable to 1.
+May  5 13:05:30 kernel: [   42.041356] RedInit: RED Initiailize Done.
+May  5 13:05:30 kernel: [   42.046094] cp_support_is_enabled: set CR4 CP_SUPPORT to Mode 2.
+May  5 13:05:30 kernel: [   42.052171] RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+May  5 13:05:30 kernel: [   42.058420] wifi_sys_open(), wdev idx = 0
+May  5 13:05:30 kernel: [   42.062467] wdev_attr_update(): wdevId0 = b0:39:56:58:95:92
+May  5 13:05:30 kernel: [   42.068021] [RcGetHdevByPhyMode]-- channel 0 fix for rdev fetching
+May  5 13:05:30 kernel: [   42.074393] ^[[1;33m [RadarStateCheck] RD_NORMAL_MODE ^[[m 
+May  5 13:05:30 kernel: [   42.079776] phy_freq_adjust : no prim_ch value for adjust!
+May  5 13:05:30 kernel: [   42.086266] Caller: wlan_operate_init+0x164/0x178 [mt_wifi_7615E]
+May  5 13:05:30 kernel: [   42.092381] phy_mode=14, ch=0, wdev_type=1
+May  5 13:05:30 kernel: [   42.096460] ht_cap->HtCapInfo: ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=1
+May  5 13:05:30 kernel: [   42.105781] ht_cap->HtCapParm: mdpu_density=5, ampdu_factor=3
+May  5 13:05:30 kernel: [   42.111807] AP inf up for ra_0(func_idx) OmacIdx=0
+May  5 13:05:30 kernel: [   42.116609] AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+May  5 13:05:30 kernel: [   42.121714] ApAutoChannelAtBootUp----------------->
+May  5 13:05:30 kernel: [   42.126576] ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+May  5 13:05:30 kernel: [   42.132397] MtCmdSetMacTxRx:(ret = 0)
+May  5 13:05:30 kernel: [   42.136113] mt7615_apply_dcoc() : reload Central CH [2] BW [0] from cetral freq [2417]  offset [2200]
+May  5 13:05:30 kernel: [   42.145476] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:30 kernel: [   42.149821] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:30 kernel: [   42.361078] mt7615_apply_dcoc() : reload Central CH [3] BW [0] from cetral freq [2417]  offset [2200]
+May  5 13:05:30 kernel: [   42.370388] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:30 kernel: [   42.374776] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:30 kernel: [   42.591073] mt7615_apply_dcoc() : reload Central CH [4] BW [0] from cetral freq [2432]  offset [2300]
+May  5 13:05:30 kernel: [   42.600382] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:30 kernel: [   42.604769] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:30 kernel: [   42.821077] mt7615_apply_dcoc() : reload Central CH [5] BW [0] from cetral freq [2432]  offset [2300]
+May  5 13:05:30 kernel: [   42.830383] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:30 kernel: [   42.834769] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:31 kernel: [   43.051446] mt7615_apply_dcoc() : reload Central CH [6] BW [0] from cetral freq [2432]  offset [2300]
+May  5 13:05:31 kernel: [   43.060758] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:31 kernel: [   43.065147] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:31 kernel: [   43.281083] mt7615_apply_dcoc() : reload Central CH [7] BW [0] from cetral freq [2447]  offset [2400]
+May  5 13:05:31 kernel: [   43.290403] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:31 kernel: [   43.294791] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:31 kernel: [   43.511072] mt7615_apply_dcoc() : reload Central CH [8] BW [0] from cetral freq [2447]  offset [2400]
+May  5 13:05:31 kernel: [   43.520378] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:31 kernel: [   43.524765] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:31 kernel: [   43.741072] mt7615_apply_dcoc() : reload Central CH [9] BW [0] from cetral freq [2447]  offset [2400]
+May  5 13:05:31 kernel: [   43.750378] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:31 kernel: [   43.754823] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:32 kernel: [   43.971069] mt7615_apply_dcoc() : reload Central CH [10] BW [0] from cetral freq [2467]  offset [2500]
+May  5 13:05:32 kernel: [   43.980457] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:32 kernel: [   43.984843] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:32 kernel: [   44.201074] mt7615_apply_dcoc() : reload Central CH [11] BW [0] from cetral freq [2467]  offset [2500]
+May  5 13:05:32 kernel: [   44.210477] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:32 kernel: [   44.214874] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:32 kernel: [   44.431070] mt7615_apply_dcoc() : reload Central CH [12] BW [0] from cetral freq [2467]  offset [2500]
+May  5 13:05:32 kernel: [   44.440467] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:32 kernel: [   44.444846] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:32 kernel: [   44.661090] mt7615_apply_dcoc() : reload Central CH [13] BW [0] from cetral freq [2467]  offset [2500]
+May  5 13:05:32 kernel: [   44.670481] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:32 kernel: [   44.674875] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:32 kernel: [   44.891057] ====================================================================
+May  5 13:05:32 kernel: [   44.898428] Channel   2 : Busy Time =   2856, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:32 kernel: [   44.905843] Channel   3 : Busy Time =   1811, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.913242] Channel   4 : Busy Time =   4506, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.920602] Channel   5 : Busy Time =   4552, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.928000] Channel   6 : Busy Time =   2040, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.935400] Channel   7 : Busy Time =   2400, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.942815] Channel   8 : Busy Time =   1518, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.950190] Channel   9 : Busy Time =   1519, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.957601] Channel  10 : Busy Time =   2593, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.964986] Channel  11 : Busy Time =   7381, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.972397] Channel  12 : Busy Time =      0, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.979773] Channel  13 : Busy Time =   1322, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:33 kernel: [   44.987181] ====================================================================
+May  5 13:05:33 kernel: [   44.994654] Rule 3 Channel Busy time value : Select Primary Channel 12
+May  5 13:05:33 kernel: [   45.001204] Rule 3 Channel Busy time value : Min Channel Busy = 0
+May  5 13:05:33 kernel: [   45.007271] Rule 3 Channel Busy time value : BW = 20
+May  5 13:05:33 kernel: [   45.012264] [SelectClearChannelBusyTime] - band0 END
+May  5 13:05:33 kernel: [   45.017213] ApAutoChannelAtBootUp : Auto channel selection: Selected channel = 12, IsAband = 0
+May  5 13:05:33 kernel: [   45.025840] ^[[41m AutoChSelUpdateChannel(): Update channel for wdev for this band PhyMode = 14, Channel = 12 ^[[m
+May  5 13:05:33 kernel: [   45.035997] ^[[1;33m [RadarStateCheck] RD_NORMAL_MODE ^[[m 
+May  5 13:05:33 kernel: [   45.041466] mt7615_apply_dcoc() : reload Central CH [10] BW [1] from cetral freq [2467]  offset [2500]
+May  5 13:05:33 kernel: [   45.050879] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:33 kernel: [   45.055270] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:33 kernel: [   45.601652] ApAutoChannelAtBootUp<-----------------
+May  5 13:05:33 kernel: [   45.606581] [PMF]APPMFInit:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+May  5 13:05:33 kernel: [   45.612536] wifi_sys_linkup(), wdev idx = 0
+May  5 13:05:33 kernel: [   45.616722] wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:127 for WDEV_TYPE:1
+May  5 13:05:33 kernel: [   45.616722]  LinkToOmacIdx = 0, LinkToWdevType = 1
+May  5 13:05:33 kernel: [   45.744267] bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 0, CmdBssInfoBmcRate.u2McTransmit = 0
+May  5 13:05:33 kernel: [   45.764003] UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 0
+May  5 13:05:33 kernel: [   45.769774] APStartUpForMbss: BssIndex = 0 channel = 12
+May  5 13:05:33 kernel: [   45.775177] MtCmdTxPowerDropCtrl: ucPowerDrop: 100, BandIdx: 0
+May  5 13:05:33 kernel: [   45.782613] apidx 0 for WscUUIDInit
+May  5 13:05:33 kernel: [   45.786091] Generate UUID for apidx(0)
+May  5 13:05:33 kernel: [   45.864286] Set_TxPower_Proc: BandIdx = 0
+May  5 13:05:34 kernel: [   45.896316] rai0: ===> main_virtual_if_open
+May  5 13:05:34 kernel: [   45.902103] load l1profile succeed!
+May  5 13:05:34 kernel: [   45.906369] driver_own()::Try to Clear FW Own...
+May  5 13:05:34 kernel: [   46.213185] driver_own()::Success to clear FW Own
+May  5 13:05:34 kernel: [   46.220078] APWdsInitialize():WdsEntry Number=4
+May  5 13:05:34 kernel: [   46.230851] RtmpOSFileOpen(): Error 2 opening /etc/Wireless/iNIC/iNIC_ap_5G.dat
+May  5 13:05:34 kernel: [   46.238201] Open file "/etc/Wireless/iNIC/iNIC_ap_5G.dat" failed!
+May  5 13:05:34 kernel: [   46.244994] E2pAccessMode=2
+May  5 13:05:34 kernel: [   46.248125] SSID[0]=Cisco_5G, EdcaIdx=0
+May  5 13:05:34 kernel: [   46.252539] BSS0 PhyMode=49
+May  5 13:05:34 kernel: [   46.255328] wmode_band_equal(): Band Equal!
+May  5 13:05:34 kernel: [   46.259595] auto_ch_select_set_cfg(): BandIdx0, AutoChannelAtBootup=1, AutoChannelAlg = 3
+May  5 13:05:34 kernel: [   46.269450] [TxPower] BAND0: 100 
+May  5 13:05:34 kernel: [   46.275053] [BFBACKOFFenable] BAND0: 1 
+May  5 13:05:34 kernel: [   46.279687] FragThreshold[0]=2346
+May  5 13:05:34 kernel: [   46.286360] I/F(ra0) NoForwardingMBCast=0
+May  5 13:05:34 kernel: [   46.293222] read_etxbf: ETxBfEnCond = 1
+May  5 13:05:34 kernel: [   46.297040] read_etxbf: BSSID[0]
+May  5 13:05:34 kernel: [   46.300248] read_etxbf: MBSS[0] ETxBfEnCond = 1
+May  5 13:05:34 kernel: [   46.305940] [RTMPSetProfileParameters]Disable DFS/Zero wait=0/0
+May  5 13:05:34 kernel: [   46.348490] If/wds0 - PeerPhyOpMode=255
+May  5 13:05:34 kernel: [   46.353063] APWdsInitialize():WdsEntry Number=4
+May  5 13:05:34 kernel: [   46.357568] WDS-Enable mode=0
+May  5 13:05:34 kernel: [   46.360728] AndesSendCmdMsg: Could not send in band command due to diablefRTMP_ADAPTER_MCU_SEND_IN_BAND_CMD
+May  5 13:05:34 kernel: [   46.370443] AndesSendCmdMsg: Command type = ed, Extension command type = 48
+May  5 13:05:34 kernel: [   46.380769] HT: WDEV[0] Ext Channel = BELOW
+May  5 13:05:34 kernel: [   46.385237] HT: greenap_cap = 0
+May  5 13:05:34 kernel: [   46.409927] RT_CfgSetWscPinCode(): invalid Wsc PinCode (14725836)
+May  5 13:05:34 kernel: [   46.416009] RTMPSetProfileParameters - WscVendorPinCode: invalid pin code(14725836)
+May  5 13:05:34 kernel: [   46.445230] WtcSetMaxStaNum: BssidNum:1, MaxStaNum:125 (WdsNum:4, ApcliNum:1, MaxNumChipRept:16), MinMcastWcid:126
+May  5 13:05:34 kernel: [   46.455810] Top Init Done!
+May  5 13:05:34 kernel: [   46.458514] Use dev_alloc_skb
+May  5 13:05:34 kernel: [   46.462917] RX[0] DESC a0e18000 size = 16384
+May  5 13:05:34 kernel: [   46.468514] RX[1] DESC a0d2a000 size = 8192
+May  5 13:05:34 kernel: [   46.473293] cut_through_init(): ct sw token number = 4095
+May  5 13:05:34 kernel: [   46.479105] cut_through_token_list_init(): TokenList inited done!id_head/tail=0/4096
+May  5 13:05:34 kernel: [   46.486861] cut_through_token_list_init(): 80d23a08,80d23a08
+May  5 13:05:34 kernel: [   46.493044] cut_through_token_list_init(): TokenList inited done!id_head/tail=0/4096
+May  5 13:05:34 kernel: [   46.500753] cut_through_token_list_init(): 80d23a18,80d23a18
+May  5 13:05:34 kernel: [   46.506457] Hif Init Done!
+May  5 13:05:34 kernel: [   46.509157] ctl->txq = c1678d90
+May  5 13:05:34 kernel: [   46.512311] ctl->rxq = c1678d9c
+May  5 13:05:34 kernel: [   46.515440] ctl->ackq = c1678da8
+May  5 13:05:34 kernel: [   46.518648] ctl->kickq = c1678db4
+May  5 13:05:34 kernel: [   46.521961] ctl->tx_doneq = c1678dc0
+May  5 13:05:34 kernel: [   46.525526] ctl->rx_doneq = c1678dcc
+May  5 13:05:34 kernel: [   46.529152] Parsing patch header
+May  5 13:05:34 kernel: [   46.532380] 	Built date: 20180518100604a
+May  5 13:05:34 kernel: [   46.536354] 
+May  5 13:05:34 kernel: [   46.537832] 	Platform: ALPS
+May  5 13:05:34 kernel: [   46.540624] 	HW/SW version: 0x8a108a10
+May  5 13:05:34 kernel: [   46.544393] 	Patch version: 0x00000010
+May  5 13:05:34 kernel: [   46.548145] 	Target address: 0x80000, length: 11072
+May  5 13:05:34 kernel: [   46.553152] patch is not ready && get semaphore success
+May  5 13:05:34 kernel: [   46.558422] EventGenericEventHandler: CMD Success
+May  5 13:05:34 kernel: [   46.563254] MtCmdPatchFinishReq
+May  5 13:05:34 kernel: [   46.577644] EventGenericEventHandler: CMD Success
+May  5 13:05:34 kernel: [   46.582447] release patch semaphore
+May  5 13:05:34 kernel: [   46.585928] WfMcuHwInit: Before NICLoadFirmware, check ICapMode = 0
+May  5 13:05:34 kernel: [   46.592231] Parsing CPU 0 fw tailer
+May  5 13:05:34 kernel: [   46.595704] 	Chip ID: 0x04
+May  5 13:05:34 kernel: [   46.598404] 	Eco version: 0x00
+May  5 13:05:34 kernel: [   46.601503] 	Region number: 0x00
+May  5 13:05:34 kernel: [   46.604721] 	Format version: 0x00
+May  5 13:05:34 kernel: [   46.608023] 	Ram version: _reserved_
+May  5 13:05:34 kernel: [   46.611660] 	Built date: 20170622015450<4>[   46.621973] 	Feature set: 0x01
+May  5 13:05:34 kernel: [   46.625033] 	Target address: 0x84000, Download size: 409600
+May  5 13:05:34 kernel: [   46.630574] Parsing tailer region 1
+May  5 13:05:34 kernel: [   46.634063] 	Feature set: 0x01
+May  5 13:05:34 kernel: [   46.637122] 	Target address: 0x209c400, Download size: 53056
+May  5 13:05:34 kernel: [   46.642876] EventGenericEventHandler: CMD Success
+May  5 13:05:34 kernel: [   46.651841] EventGenericEventHandler: CMD Success
+May  5 13:05:34 kernel: [   46.657014] MtCmdFwStartReq: override = 0x1, address = 0x84000
+May  5 13:05:34 kernel: [   46.662963] EventGenericEventHandler: CMD Success
+May  5 13:05:34 kernel: [   46.667685] Parsing CPU 1 fw tailer
+May  5 13:05:34 kernel: [   46.671181] 	Chip ID: 0x04
+May  5 13:05:34 kernel: [   46.673890] 	Eco version: 0x00
+May  5 13:05:34 kernel: [   46.676933] 	Region number: 0x00
+May  5 13:05:34 kernel: [   46.680149] 	Format version: 0x00
+May  5 13:05:34 kernel: [   46.683476] 	Ram version: _reserved_
+May  5 13:05:34 kernel: [   46.687068] 	Built date: 20190415154149<4>[   46.693916] Parsing tailer region 0
+May  5 13:05:34 kernel: [   46.697382] 	Feature set: 0x01
+May  5 13:05:34 kernel: [   46.700428] 	Target address: 0x90000000, Download size: 122608
+May  5 13:05:34 kernel: [   46.706334] EventGenericEventHandler: CMD Success
+May  5 13:05:34 kernel: [   46.712026] MtCmdFwStartReq: override = 0x4, address = 0x0
+May  5 13:05:34 kernel: [   46.782881] EventGenericEventHandler: CMD Success
+May  5 13:05:34 kernel: [   46.821714] MCU Init Done!
+May  5 13:05:34 kernel: [   46.824423] efuse_probe: efuse = 10000212
+May  5 13:05:34 kernel: [   46.828410] RtmpChipOpsEepromHook::e2p_type=2, inf_Type=5
+May  5 13:05:34 kernel: [   46.833800] RtmpEepromGetDefault::e2p_dafault=1
+May  5 13:05:34 kernel: [   46.838308] RtmpChipOpsEepromHook: E2P type(2), E2pAccessMode = 2, E2P default = 1
+May  5 13:05:34 kernel: [   46.845875] NVM is FLASH mode. dev_idx [1] FLASH OFFSET [0x8000]
+May  5 13:05:34 kernel: [   46.853689] ^[[34mNICReadEEPROMParameters: EEPROM 0x52 b302^[[m
+May  5 13:05:34 kernel: [   46.859423] ^[[34mNICReadEEPROMParameters: EEPROM 0x52 b302^[[m
+May  5 13:05:42 kernel: [   54.327949] Country Region from e2p = 101
+May  5 13:05:42 kernel: [   54.331986] mt7615_antenna_default_reset(): TxPath = 4, RxPath = 4
+May  5 13:05:42 kernel: [   54.338144] RcRadioInit(): DbdcMode=0, ConcurrentBand=1
+May  5 13:05:42 kernel: [   54.343370] RcRadioInit(): pRadioCtrl=8fd56af4,Band=0,rfcap=3,channel=1,PhyMode=2 extCha=0xf
+May  5 13:05:42 kernel: [   54.351816] MtSingleSkuLoadParam: RF_LOCKDOWN Feature OFF !!!
+May  5 13:05:42 kernel: [   54.358929] MtBfBackOffLoadParam: RF_LOCKDOWN Feature OFF !!!
+May  5 13:05:42 kernel: [   54.365065] EEPROM Init Done!
+May  5 13:05:42 kernel: [   54.368030] mt_mac_init()-->
+May  5 13:05:42 kernel: [   54.370892] mt7615_init_mac_cr()-->
+May  5 13:05:42 kernel: [   54.374397] mt7615_init_mac_cr(): TMAC_TRCR0=0x82783c8c
+May  5 13:05:42 kernel: [   54.379622] <--mt_mac_init()
+May  5 13:05:42 kernel: [   54.382703] CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+May  5 13:05:42 kernel: [   54.389325] CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+May  5 13:05:42 kernel: [   54.395938] CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+May  5 13:05:42 kernel: [   54.402487] MAC Init Done!
+May  5 13:05:42 kernel: [   54.405190] MT7615BBPInit():BBP Initialization.....
+May  5 13:05:42 kernel: [   54.410046] 	Band 0: valid=1, isDBDC=0, Band=2, CBW=1, CentCh/PrimCh=1/1, prim_ch_idx=0, txStream=2
+May  5 13:05:42 kernel: [   54.419096] 	Band 1: valid=0, isDBDC=0, Band=0, CBW=0, CentCh/PrimCh=0/0, prim_ch_idx=0, txStream=0
+May  5 13:05:42 kernel: [   54.428112] MT7615BBPInit() todo
+May  5 13:05:42 kernel: [   54.431347] PHY Init Done!
+May  5 13:05:42 kernel: [   54.436565] MtCmdSetMacTxRx:(ret = 0)
+May  5 13:05:42 kernel: [   54.440510] ap_ftkd> Initialize FT KDP Module...
+May  5 13:05:42 kernel: [   54.445164] Main bssid = 00:00:00:00:00:00
+May  5 13:05:42 kernel: [   54.456659] MtCmdSetMacTxRx:(ret = 0)
+May  5 13:05:42 kernel: [   54.460494] MtCmdSetMacTxRx:(ret = 0)
+May  5 13:05:42 kernel: [   54.464205] <==== mt_wifi_init, Status=0
+May  5 13:05:42 kernel: [   54.468109] TxBfModuleEnCtrl:It's not DBDC mode
+May  5 13:05:42 kernel: [   54.472698] MtCmdEDCCACtrl: BandIdx: 0, EDCCACtrl: 1
+May  5 13:05:42 kernel: [   54.477772] The new WDS interface MAC = 00:00:00:00:00:00, MacTabMatchWCID = 0
+May  5 13:05:42 kernel: [   54.486665] The new WDS interface MAC = 00:00:00:00:00:00, MacTabMatchWCID = 0
+May  5 13:05:42 kernel: [   54.498392] The new WDS interface MAC = 00:00:00:00:00:00, MacTabMatchWCID = 0
+May  5 13:05:42 kernel: [   54.541171] The new WDS interface MAC = 00:00:00:00:00:00, MacTabMatchWCID = 0
+May  5 13:05:42 kernel: [   54.549872] Total allocated 4 WDS interfaces!
+May  5 13:05:42 kernel: [   54.602671] WtcSetMaxStaNum: BssidNum:1, MaxStaNum:125 (WdsNum:4, ApcliNum:1, MaxNumChipRept:16), MinMcastWcid:126
+May  5 13:05:42 kernel: [   54.718255] RedInit: set CR4/N9 RED Enable to 1.
+May  5 13:05:42 kernel: [   54.722939] RedInit: RED Initiailize Done.
+May  5 13:05:42 kernel: [   54.727052] cp_support_is_enabled: set CR4 CP_SUPPORT to Mode 2.
+May  5 13:05:42 kernel: [   54.733108] RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+May  5 13:05:42 kernel: [   54.739354] wifi_sys_open(), wdev idx = 0
+May  5 13:05:42 kernel: [   54.743395] wdev_attr_update(): wdevId0 = b0:39:56:58:95:93
+May  5 13:05:42 kernel: [   54.748945] [RcGetHdevByPhyMode]-- channel 0 fix for rdev fetching
+May  5 13:05:42 kernel: [   54.755329] ^[[1;33m [RadarStateCheck] RD_NORMAL_MODE ^[[m 
+May  5 13:05:42 kernel: [   54.760714] phy_freq_adjust : no prim_ch value for adjust!
+May  5 13:05:42 kernel: [   54.767170] Caller: wlan_operate_init+0x164/0x178 [mt_wifi_7615E]
+May  5 13:05:42 kernel: [   54.773282] phy_mode=49, ch=0, wdev_type=1
+May  5 13:05:42 kernel: [   54.777361] ht_cap->HtCapInfo: ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=1
+May  5 13:05:42 kernel: [   54.786650] ht_cap->HtCapParm: mdpu_density=5, ampdu_factor=3
+May  5 13:05:42 kernel: [   54.792751] AP inf up for ra_0(func_idx) OmacIdx=0
+May  5 13:05:42 kernel: [   54.797554] AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+May  5 13:05:42 kernel: [   54.802615] ApAutoChannelAtBootUp----------------->
+May  5 13:05:42 kernel: [   54.807474] ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+May  5 13:05:42 kernel: [   54.813250] MtCmdSetMacTxRx:(ret = 0)
+May  5 13:05:42 kernel: [   54.816941] [AutoChSelBuildChannelListFor5G] ChListNum5G = 13
+May  5 13:05:42 kernel: [   54.822752] mt7615_apply_dcoc() : reload Central CH [36] BW [0] from cetral freq [5190]  offset [700]
+May  5 13:05:42 kernel: [   54.832095] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:42 kernel: [   54.836433] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:43 kernel: [   55.051076] mt7615_apply_dcoc() : reload Central CH [40] BW [0] from cetral freq [5190]  offset [700]
+May  5 13:05:43 kernel: [   55.060391] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:43 kernel: [   55.064781] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:43 kernel: [   55.281074] mt7615_apply_dcoc() : reload Central CH [44] BW [0] from cetral freq [5230]  offset [800]
+May  5 13:05:43 kernel: [   55.290391] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:43 kernel: [   55.294788] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:43 kernel: [   55.511080] mt7615_apply_dcoc() : reload Central CH [48] BW [0] from cetral freq [5230]  offset [800]
+May  5 13:05:43 kernel: [   55.520392] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:43 kernel: [   55.524786] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:43 kernel: [   55.741079] mt7615_apply_dcoc() : reload Central CH [52] BW [0] from cetral freq [5270]  offset [900]
+May  5 13:05:43 kernel: [   55.750534] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:43 kernel: [   55.754937] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:44 kernel: [   55.971076] mt7615_apply_dcoc() : reload Central CH [56] BW [0] from cetral freq [5270]  offset [900]
+May  5 13:05:44 kernel: [   55.980389] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:44 kernel: [   55.984785] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:44 kernel: [   56.201099] mt7615_apply_dcoc() : reload Central CH [60] BW [0] from cetral freq [5310]  offset [a00]
+May  5 13:05:44 kernel: [   56.210423] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:44 kernel: [   56.214820] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:44 kernel: [   56.431082] mt7615_apply_dcoc() : reload Central CH [64] BW [0] from cetral freq [5310]  offset [a00]
+May  5 13:05:44 kernel: [   56.440393] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:44 kernel: [   56.444787] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:44 kernel: [   56.661054] ====================================================================
+May  5 13:05:44 kernel: [   56.668429] Channel  36 : Busy Time =    237, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:44 kernel: [   56.675847] Channel  40 : Busy Time =    234, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:44 kernel: [   56.683247] Channel  44 : Busy Time =      8, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:44 kernel: [   56.690607] Channel  48 : Busy Time =      0, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:44 kernel: [   56.698002] Channel  52 : Busy Time =      0, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:44 kernel: [   56.705393] Channel  56 : Busy Time =    219, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:44 kernel: [   56.712927] Channel  60 : Busy Time =      0, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:44 kernel: [   56.720363] Channel  64 : Busy Time =      0, Skip Channel = FALSE, BwCap = TRUE
+May  5 13:05:44 kernel: [   56.727780] ====================================================================
+May  5 13:05:44 kernel: [   56.735169] Rule 3 Channel Busy time value : Select Primary Channel 48
+May  5 13:05:44 kernel: [   56.741809] Rule 3 Channel Busy time value : Min Channel Busy = 237
+May  5 13:05:44 kernel: [   56.748053] Rule 3 Channel Busy time value : BW = 160
+May  5 13:05:44 kernel: [   56.753194] [SelectClearChannelBusyTime] - band0 END
+May  5 13:05:44 kernel: [   56.758148] ApAutoChannelAtBootUp : Auto channel selection: Selected channel = 48, IsAband = 1
+May  5 13:05:44 kernel: [   56.766778] ^[[41m AutoChSelUpdateChannel(): Update channel for wdev for this band PhyMode = 49, Channel = 48 ^[[m
+May  5 13:05:44 kernel: [   56.776932] ^[[1;33m [RadarStateCheck] RD_NORMAL_MODE ^[[m 
+May  5 13:05:44 kernel: [   56.782388] mt7615_apply_dcoc() : reload 160 Central CH [42] BW [3] from cetral freq [5210]  offset [1900]
+May  5 13:05:44 kernel: [   56.792165] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:44 kernel: [   56.796506] mt7615_apply_dcoc() : reload 160 Central CH [58] BW [3] from cetral freq [5290]  offset [1a00]
+May  5 13:05:44 kernel: [   56.806418] MtCmdGetRXDCOCCalResult:(ret = 0)
+May  5 13:05:44 kernel: [   56.810758] mt7615_apply_cal_data() : eeprom 0x52 bit 0 is 0, do runtime cal , skip TX reload
+May  5 13:05:46 kernel: [   58.542121] [DfsCacNormalStart] Normal start. Enable MAC TX
+May  5 13:05:46 kernel: [   58.562115] ApAutoChannelAtBootUp<-----------------
+May  5 13:05:46 kernel: [   58.566995] [PMF]APPMFInit:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+May  5 13:05:46 kernel: [   58.572948] wifi_sys_linkup(), wdev idx = 0
+May  5 13:05:46 kernel: [   58.577132] wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:127 for WDEV_TYPE:1
+May  5 13:05:46 kernel: [   58.577132]  LinkToOmacIdx = 0, LinkToWdevType = 1
+May  5 13:05:46 kernel: [   58.705420] bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 8192, CmdBssInfoBmcRate.u2McTransmit = 8196
+May  5 13:05:46 kernel: [   58.725684] UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 0
+May  5 13:05:46 kernel: [   58.731483] APStartUpForMbss: BssIndex = 0 channel = 48
+May  5 13:05:46 kernel: [   58.736827] MtCmdTxPowerDropCtrl: ucPowerDrop: 100, BandIdx: 0
+May  5 13:05:46 kernel: [   58.744114] apidx 0 for WscUUIDInit
+May  5 13:05:46 kernel: [   58.747637] Generate UUID for apidx(0)
+May  5 13:05:46 kernel: [   58.758378] Set_TxPower_Proc: BandIdx = 0
+May  5 13:05:47 R6800: start skipd
+May  5 13:05:47 kernel: [   59.759431] Set_Fh_Bss_Proc ra0 wdev->MAPCfg.DevOwnRole 0x0
+May  5 13:05:47 kernel: [   59.775343] Set_Fh_Bss_Proc ra0 wdev->MAPCfg.DevOwnRole 0x20
+May  5 13:05:47 kernel: [   59.803406] Set_Fh_Bss_Proc rai0 wdev->MAPCfg.DevOwnRole 0x0
+May  5 13:05:47 kernel: [   59.819309] Set_Fh_Bss_Proc rai0 wdev->MAPCfg.DevOwnRole 0x20
+May  5 13:05:49 R6800: start httpd:80
+May  5 13:05:49 smartdns: conf file /etc/blacklist-ip.conf is not readable.
+May  5 13:05:49 smartdns: conf file /etc/whitelist-ip.conf is not readable.
+May  5 13:05:49 smartdns: conf file /etc/seconddns.conf is not readable.
+May  5 13:05:49 disk monitor: be idle
+May  5 13:05:49 kernel: [   61.706109] Set_Map_Proc current MAP MODE is 0
+May  5 13:05:49 kernel: [   61.722692] Set_Map_Proc current MAP MODE is 0
+May  5 13:05:49 avahi-daemon[1334]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+May  5 13:05:50 kernel: [   61.946492] Set_Fh_Bss_Proc ra0 wdev->MAPCfg.DevOwnRole 0x0
+May  5 13:05:50 kernel: [   61.959227] Set_Fh_Bss_Proc ra0 wdev->MAPCfg.DevOwnRole 0x20
+May  5 13:05:50 kernel: [   61.985410] Set_Fh_Bss_Proc rai0 wdev->MAPCfg.DevOwnRole 0x0
+May  5 13:05:50 kernel: [   62.005950] Set_Fh_Bss_Proc rai0 wdev->MAPCfg.DevOwnRole 0x20
+May  5 13:05:50 httpd: Save SSL certificate...80
+May  5 13:05:50 httpd: Generating SSL certificate...80
+May  5 13:05:50 kernel: [   62.098713] -->mtfwd_init(ver:1.0)<--
+May  5 13:05:50 kernel: [   62.317228] add tx_src: b0:39:56:58:95:92
+May  5 13:05:50 kernel: [   62.325638] Mac: b0:39:56:58:95:92 was aleady existed.
+May  5 13:05:50 kernel: [   62.330927] add tx_src: b0:39:56:58:95:93
+May  5 13:05:50 kernel: [   62.335848] add tx_src: b6:29:56:58:95:92
+May  5 13:05:50 kernel: [   62.339898] nf_unregister_hooks()
+May  5 13:05:50 kernel: [   62.461921] Mac: b0:39:56:58:95:93 was aleady existed.
+May  5 13:05:50 kernel: [   62.467261] add tx_src: b6:29:56:58:95:93
+May  5 13:05:50 kernel: [   62.478231] [mtfwd] update eth interface vlan1
+May  5 13:05:50 kernel: [   62.482883] Mac: b0:39:56:58:95:92 was aleady existed.
+May  5 13:05:50 kernel: [   62.488108] Mac: b0:39:56:58:95:93 was aleady existed.
+May  5 13:05:50 kernel: [   62.512013] Mac: b0:39:56:58:95:93 was aleady existed.
+May  5 13:05:50 kernel: [   62.517389] Mac: b0:39:56:58:95:93 was aleady existed.
+May  5 13:05:50 kernel: [   62.541947] Mac: b0:39:56:58:95:92 was aleady existed.
+May  5 13:05:50 kernel: [   62.547418] Mac: b0:39:56:58:95:92 was aleady existed.
+May  5 13:05:50 avahi-daemon[1334]: Alias name "R6800" successfully established.
+May  5 13:05:52 : module ehci-hcd not found in modules.dep
+May  5 13:05:52 : module ohci-hcd not found in modules.dep
+May  5 13:05:52 : module leds-usb not found in modules.dep
+May  5 13:05:52 kernel: [   64.328171] SCSI subsystem initialized
+May  5 13:05:52 : module scsi_wait_scan not found in modules.dep
+May  5 13:05:52 Mastiff: init
+May  5 13:05:52 : module jbd not found in modules.dep
+May  5 13:05:52 : module ext3 not found in modules.dep
+May  5 13:05:54 rc_service: udhcpc_lan 1839:notify_rc stop_httpd
+May  5 13:05:54 rc_service: udhcpc_lan 1839:notify_rc start_httpd
+May  5 13:05:54 rc_service: waitting "stop_httpd" via udhcpc_lan ...
+May  5 13:05:55 Softcenter/软件中心: Installing/开始安装......
+May  5 13:05:55 Softcenter/软件中心: Wait a minute/1分钟后完成安装
+May  5 13:05:56 admin: Not enough free space for JFFS!/当前jffs分区剩余空间不足!
+May  5 13:05:56 admin: Exit!/退出安装!
+May  5 13:05:56 rc_service: service 1867:notify_rc start_skipd
+May  5 13:05:56 rc_service: waitting "stop_httpd" via udhcpc_lan ...
+May  5 13:05:58 httpd: Succeed to init SSL certificate...80
+May  5 13:05:59 R6800: swrtid:f04676b5-4662-4e17-84c3-d2758bbb95d3
+May  5 13:05:59 R6800: rcode:823366ceafde382c11b8a00f232186ae
+May  5 13:05:59 R6800: fwver: 4.0.0.4_386_R6800_B5.1.8-g5f2309a (sn: /ha:B0:39:56:58:95:93 )
+May  5 13:05:59 R6800: start httpd:80
+May  5 13:05:59 rc_service: udhcpc_lan 1839:notify_rc start_dnsmasq
+May  5 13:05:59 rc_service: waitting "start_httpd" via udhcpc_lan ...
+May  5 13:05:59 httpd: Save SSL certificate...80
+May  5 13:05:59 httpd: Generating SSL certificate...80
+May  5 13:06:00 R6800: start skipd
+May  5 13:06:00 ntp: start NTP update
+Apr 14 00:46:08 rc_service: ntp 2044:notify_rc restart_diskmon
+Apr 14 00:46:08 disk_monitor: Finish
+Apr 14 00:46:08 disk monitor: be idle
+Apr 14 00:46:09 kernel: [   73.302733] Set_Fh_Bss_Proc ra0 wdev->MAPCfg.DevOwnRole 0x0
+Apr 14 00:46:09 kernel: [   73.319879] Set_Fh_Bss_Proc ra0 wdev->MAPCfg.DevOwnRole 0x20
+Apr 14 00:46:09 kernel: [   73.347345] Set_Fh_Bss_Proc rai0 wdev->MAPCfg.DevOwnRole 0x0
+Apr 14 00:46:09 kernel: [   73.363384] Set_Fh_Bss_Proc rai0 wdev->MAPCfg.DevOwnRole 0x20
+Apr 14 00:46:14 httpd: Succeed to init SSL certificate...80
+Apr 14 00:47:07 crond[1267]: time disparity of 2072861 minutes detected
+Apr 14 00:47:57 WATCHDOG: [FAUPGRADE][auto_firmware_check:(7641)]periodic_check AM 2:22
+Apr 14 00:47:57 WATCHDOG: [FAUPGRADE][auto_firmware_check:(7680)]do webs_update
+Apr 14 00:47:58 WATCHDOG: [FAUPGRADE][auto_firmware_check:(7751)]could not retrieve firmware information: webs_state_update = 1, webs_state_error = 1, webs_state_dl_error = 0, webs_state_info.len = 31
+Apr 14 00:48:28 WATCHDOG: [FAUPGRADE][auto_firmware_check:(7680)]do webs_update
+Apr 14 00:48:29 WATCHDOG: [FAUPGRADE][auto_firmware_check:(7751)]could not retrieve firmware information: webs_state_update = 1, webs_state_error = 1, webs_state_dl_error = 0, webs_state_info.len = 31
+Apr 14 00:48:59 WATCHDOG: [FAUPGRADE][auto_firmware_check:(7680)]do webs_update
+Apr 14 00:49:00 WATCHDOG: [FAUPGRADE][auto_firmware_check:(7751)]could not retrieve firmware information: webs_state_update = 1, webs_state_error = 1, webs_state_dl_error = 0, webs_state_info.len = 31
+Apr 14 00:49:07 rc_service: httpd 1994:notify_rc restart_time;restart_upnp;restart_leds;restart_uuacc;restart_usb_idle;
+Apr 14 00:49:07 kernel: klogd started: BusyBox v1.25.1 (2022-04-12 20:30:56 CST)
+Apr 14 00:49:07 ntp: start NTP update
+
+
